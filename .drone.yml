@@ -2,9 +2,6 @@ kind: pipeline
 type: docker
 name: ci/cd
 volumes:
-  - name: node_modules
-    host:
-      path: /root/node-zzf/node_modules
   - name: ssh_keys
     host:
       path: /root/.ssh
