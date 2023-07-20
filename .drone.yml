@@ -35,20 +35,6 @@ steps:
         from_secret: nexus_docker_password
       repo: hub.oocc.es/home/pnpm
       tags: latest
-  - name: build docker file and publish 16
-    depends_on:
-      - clone
-    image: plugins/docker
-    pull: if-not-exists
-    settings:
-      registry: hub.oocc.es
-      username:
-        from_secret: nexus_docker_username
-      password:
-        from_secret: nexus_docker_password
-      repo: hub.oocc.es/home/pnpm
-      tags: 16
-      dockerfile: Dockerfile-16
 trigger:
   event:
     exclude:
