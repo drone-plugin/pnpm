@@ -28,7 +28,7 @@ steps:
     image: plugins/docker
     pull: if-not-exists
     settings:
-      registry: hub.oocc.es
+      registry: hub.ccw.es
       username:
         from_secret: nexus_docker_username
       password:
