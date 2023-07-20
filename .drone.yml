@@ -33,7 +33,7 @@ steps:
         from_secret: nexus_docker_username
       password:
         from_secret: nexus_docker_password
-      repo: hub.oocc.es/home/pnpm
+      repo: hub.ccw.es/home/pnpm
       tags: latest
 trigger:
   event:
