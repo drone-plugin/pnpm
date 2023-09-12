@@ -1,3 +1,3 @@
 FROM node:lts-alpine
 
-RUN npm --silent install --global --depth 0 pnpm
+RUN corepack enable&&corepack prepare pnpm@latest-8 --activate
